@@ -42,7 +42,7 @@ else echo '<script type="text/javascript">
   }
   var today_date = year + "-" + month + "-" + day;
     $.ajax({
-    url:"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date="+today_date+"&page=1&camera=NAVCAM&api_key=b5H1OCQ0tAb7bsVqagv8sUaCguOXetcXx1KOFdzc",
+    url:"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date="+today_date+"&page=1&camera=NAVCAM&api_key=your_Api_key",
     success:function(data){
         $('#demo').append('Galerija slika za Rover Curiosity, za datum '+today_date);
 data['photos'].forEach(function (d) {
