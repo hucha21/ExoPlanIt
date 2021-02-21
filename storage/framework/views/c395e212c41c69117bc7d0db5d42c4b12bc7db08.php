@@ -23,7 +23,7 @@ else echo '<script type="text/javascript">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
     $.ajax({
-    url:"https://api.nasa.gov/planetary/apod?api_key=b5H1OCQ0tAb7bsVqagv8sUaCguOXetcXx1KOFdzc",
+    url:"https://api.nasa.gov/planetary/apod?api_key=your_api_key",
     success:function(rez){
     document.getElementById("slika").innerHTML="<img src='"+rez.url+"'style='height:30%;display: block;margin-left: auto;margin-right: auto;'/>";
     document.getElementById("title").innerHTML=rez.title;
